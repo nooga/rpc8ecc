@@ -7,7 +7,7 @@
 The compiler binaries for OX X 10.7 are in the `bin/` directory but You will probably need to compile the cc65 itself for your system.
 
 1. Grab CC65 V2.13.3 for your system here: ftp://ftp.musoftware.de/pub/uz/cc65/
-2. Compile the compiler with the usual `./compile && make` stuff
+2. Compile the compiler with the usual `./configure && make` stuff
 3. Link or copy the compiler binaries to the `bin/` folder of this project
 4. Done
 
