@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+cp ./test/irc_client.img /Applications/MultiMC.app/Contents/Resources/instances/1.2.5\ ftb/minecraft/saves/cpu\ test/redpower/

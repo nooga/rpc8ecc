@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp test/$1.img /Applications/MultiMC.app/Contents/Resources/instances/1.2.5\ ftb/minecraft/saves/cpu\ test/redpower/disk_1b63bbbd8ce6001f.img

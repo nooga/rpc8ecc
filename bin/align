@@ -1,0 +1,14 @@
+#!/bin/bash
+BS=128
+COUNT=`wc -c $1`
+BYTES=${COUNT//[^0-9]/}
+BLOCKS=$(( BYTES / BS ))
+SECTORS=$(( BLOCKS + 1 ))
+echo "Code size  = " $BYTES 
+echo "Image size = " $SECTORS " * " $BS " = " $(( SECTORS * BS ))
+dd if=/dev/zero of=$1.pad bs=$BS count=$SECTORS > /dev/null 2>&1
+dd if=$1 of=$1.pad conv=notrunc > /dev/null 2>&1
+rm $1
+mv $1.pad $1
+#echo $BLOCKS " bytes aligned to " $NEWBLOCKS " blocks"
+#dd if=/dev/zero oflag=seek_bytes seek=$BLOCKS of=$1 bs=16 count=$NEWBLOCKS conv=notrunc
