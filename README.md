@@ -4,7 +4,7 @@
 
 ## Installation
 
-The compiler binaries for OX X 10.7 are in the `bin/` directory but You will probably need to compile the cc65 itself for your system.
+The compiler binaries for OS X 10.7 are in the `bin/` directory but You will probably need to compile the cc65 itself for your system.
 
 1. Grab CC65 V2.13.3 for your system here: ftp://ftp.musoftware.de/pub/uz/cc65/
 2. Compile the compiler with the usual `./configure && make` stuff
