@@ -2,6 +2,8 @@
 
 ... is a cc65 C compiler fitted to target redpower's rpc8e computer in Minecraft. 
 
+![Mandatory screenshot](http://cl.ly/image/021S3E3H1h1U/Zrzut%20ekranu%202012-10-27%20o%2018.20.47.png)
+
 ## Installation
 
 The compiler binaries for OS X 10.7 are in the `bin/` directory but You will probably need to compile the cc65 itself for your system.
