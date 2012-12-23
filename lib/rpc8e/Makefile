@@ -29,7 +29,8 @@ CFLAGS	= -Osir -g -T -t $(SYS) --forget-inc-paths -I . -I ../../include --cpu $(
 # Object files
 
 OBJS = 	crt0.o \
-		redbus.o
+		redbus.o \
+		ctype.o
 
 #--------------------------------------------------------------------------
 # Targets
