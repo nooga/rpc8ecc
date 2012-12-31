@@ -55,6 +55,8 @@ _init:    LDX     #$FF                 ; Initialize stack pointer to $01FF
 ; ---------------------------------------------------------------------------
 ; Initialize redbus
 
+; This below is useless right now, probably will be removed
+
 ; from foth boot disk
 ;000500   18         CLC 
 ;000501   FB         XCE 
