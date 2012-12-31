@@ -43,10 +43,11 @@ CFLAGS	= -Osir -g -T -t $(SYS) --forget-inc-paths -I . -I ../../include --cpu $(
  C_OBJS =	strtok.o	        \
         strtol.o                \
         strtoul.o               \
- 		strxfrm.o	
+ 		strxfrm.o				\
+  		_hextab.o	        
  		#    strftime.o  \
 #_afailed.o	        \
-# 		_hextab.o	        \
+
 #                 _poserror.o             \
 # 		_scanf.o	        \
 # 		abort.o		        \

@@ -46,3 +46,10 @@ typedef struct Console {
 //character with inverted colors
 #define inv(c) ((c) | 0x80)
 
+//void blit(char command, char x, char y, char xo, char yo, char w, char h);
+
+#define fill(b, x, y, w, h) 		blit(1, b, 0, x, y, w, h)
+#define invert(x, y, w, h) 			blit(2, 0, 0, x, y, w, h)
+#define scroll(x, y, ox, oy, w, h) 	blit(3, x, y, ox, oy, w, h)
+
+

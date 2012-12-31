@@ -32,12 +32,14 @@ OBJS = 	crt0.o \
 		redbus.o \
 		ctype.o
 
+#COBJS = console.o
+
 #--------------------------------------------------------------------------
 # Targets
 
 .PHONY:	all clean zap
 
-all:   	$(OBJS)
+all:   	$(OBJS) $(COBJS)
 
 clean:
 	@$(RM) *~ $(COBJS:.o=.s) $(OBJS)

@@ -35,10 +35,6 @@ void blit(char command, char x, char y, char xo, char yo, char w, char h) {
 	while(con->blit_mode != 0) ; //WAI
 }
 
-#define fill(b, x, y, w, h) 		blit(1, b, 0, x, y, w, h)
-#define invert(x, y, w, h) 			blit(2, 0, 0, x, y, w, h)
-#define scroll(x, y, ox, oy, w, h) 	blit(3, x, y, ox, oy, w, h)
-
 #define LF 	13
 
 void prepare_screen() {

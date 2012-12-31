@@ -3,14 +3,19 @@ AS = ../bin/ca65
 CC = ../bin/cc65
 AL = ../bin/align
 
-CINCLUDE = -I ../include
+CINCLUDE = -I../include
 CFLAGS = -t none --cpu $(CPU)
 LFLAGS = -C ../lib/rpc8e.cfg
 LLIBS  = ../lib/rpc8e.lib
 
-IMAGES = test_rb.img irc_client.img
+#gonna leave this here for now
+CPU = 65c02 
+
+
+IMAGES = test_rb.img test_stdlib.img 
 
 .PHONY: all
+
 all: $(IMAGES)
 
 %.s: %.c
@@ -19,15 +24,12 @@ all: $(IMAGES)
 %.o: %.s
 	$(AS) $(CFLAGS) $<
 
-%.img: %.o
-	$(LD) $(LFLAGS) $< $(LLIBS) -o $@
+%.img: %.o test.o
+	$(LD) $(LFLAGS) $< test.o $(LLIBS) -o $@
 	$(AL) $@
 
 
-
-
-
 clean:
-	rm  *.o
+	rm  *.o *.s
 
 .SUFFIXES:
