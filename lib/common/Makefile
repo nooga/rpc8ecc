@@ -104,7 +104,6 @@ S_OBJS = zerobss.o \
 	memcpy.o      	\
 	memmove.o       \
 	memset.o      	\
-#	mkdir.o		\
 	strcat.o    	\
 	strchr.o	\
 	strcmp.o	\
