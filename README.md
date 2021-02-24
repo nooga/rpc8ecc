@@ -1,3 +1,7 @@
+# This is obsolete and doesn't make any sense in this day and age. Keeping it here as a memoir.
+
+---
+
 # rpc8ecc
 
 ... is a cc65 C compiler fitted to target redpower's rpc8e computer in Minecraft. 
